@@ -1,19 +1,34 @@
-var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+namespace Practice;
 
-var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+public class Program
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+
+  static void Main(string[] args)
+  {
+
+    Math total = new(); //new object
+
+    var result = total.Multiply(1, 3); //1st method
+    var result2 = total.Multiply(1, 3, 4); //2nd method
+
+
+    Console.WriteLine($"the first result is: {result}");
+    Console.WriteLine($"the second result is: {result2}");
+
+
+
+
+  }
+
+
 }
 
-app.UseHttpsRedirection();
 
-app.Run();
+
+
+
+
+
+
