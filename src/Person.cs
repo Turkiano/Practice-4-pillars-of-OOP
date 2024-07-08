@@ -10,12 +10,11 @@ public class Person
 
 
 
-    public virtual string greeting() //this is the greeting method
+    public string greeting() //this is the greeting method
     { return $"Hello {name}"; }
 
 
 
 
 }
-
 
