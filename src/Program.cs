@@ -2,26 +2,38 @@
 namespace Practice;
 
 
-public class Student : Person
-{// subclass(Student) inheriting from superclass(Person)
-
-
-
-}
-
-internal class Program
+class Program
 {
 
-    static void Main(string[] args)
+  static void Main(string[] args)
+  {
+    Console.WriteLine("Write your name: ");
+    string? inputName = Console.ReadLine();
+
+
+    if (inputName is not null)
     {
 
-        Student student = new(); //new object
-        student.name = "Turkiano"; //using the inherited field from superclass
-        Console.WriteLine(student.greeting()); //using the inherited method from superclass
+
+      Person person = new Person(inputName);
+
+      string? result = person.GetName();
+      Console.WriteLine("This is your name is: " + result);
+    }
+
+    else
+    {
+
+      Console.WriteLine("input can not be impty");
 
 
     }
+
+
+  }
+
 }
+
 
 
 

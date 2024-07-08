@@ -2,17 +2,23 @@ namespace Practice;
 
 
 public class Person
-{
-
-    public string? name; //public field
-                         // public Person(string Name) //this is the constructor
-                         // { _name = Name; }
+{ //class with fields & methods
 
 
+    private string? _name; //private field
 
-    public string greeting() //this is the greeting method
-    { return $"Hello {name}"; }
 
+    public Person(string Name) //this is the constructor
+    {
+        _name = Name;
+
+    }
+    public string? GetName() //this is the get method
+    {
+        return _name;
+
+
+    }
 
 
 
