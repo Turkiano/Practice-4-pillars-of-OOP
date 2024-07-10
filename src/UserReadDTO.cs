@@ -1,11 +1,13 @@
 
-namespace Practice{
+namespace Practice
+{
 
-    public class UserReadDTO {
+    public class UserReadDTO
+    {
 
-        public string? Name {get; set;}
-        public string? Email {get; set;}
+        public string? Name { get; set; }
+        public string? Email { get; set; }
     }
 
-    
+
 }

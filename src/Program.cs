@@ -7,7 +7,7 @@ class Program
 
   static void Main(string[] args)
   {
-    User customer1 = new()
+    User customer1 = new() //this is how to test your User Data
     {
 
       Name = "Turki",
@@ -17,8 +17,12 @@ class Program
 
     };
 
-    UserReadDTO customerRead = customer1.ConvertToRead();
-    UserUpdateDTO customerUpdate = customer1.ConverToUpdate("Khalid");
+    UserReadDTO customerRead = customer1.ConvertToRead(); //to implement ReadDTO
+    UserUpdateDTO customerUpdate = customer1.ConverToUpdate("Khalid"); //to implement UpdaeDTO
+
+
+
+
 
     Console.WriteLine(customerRead.Name);
     Console.WriteLine(customerRead.Email);
