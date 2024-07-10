@@ -1,7 +1,7 @@
 namespace Practice
 {
 
-    public class Vehicles //class with fields & methods
+    abstract public class Vehicles 
     {
 
         public int speed = 0;
