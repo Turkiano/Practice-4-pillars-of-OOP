@@ -7,7 +7,8 @@ class Program
 
   static void Main(string[] args)
   {
-    User customer1 = new (){
+    User customer1 = new()
+    {
 
       Name = "Turki",
       Email = "turkiano@gmail.com",
@@ -16,11 +17,18 @@ class Program
 
     };
 
-        UserReadDTO customerRead = customer1.ConvertToRead();
+    UserReadDTO customerRead = customer1.ConvertToRead();
+    UserUpdateDTO customerUpdate = customer1.ConverToUpdate("Khalid");
 
-        Console.WriteLine(customerRead.Name);
-        Console.WriteLine(customerRead.Email);
-        
+    Console.WriteLine(customerRead.Name);
+    Console.WriteLine(customerRead.Email);
+
+    Console.WriteLine("-------------");
+    Console.WriteLine($"This is the updated Name: {customerUpdate.Name}");
+    Console.WriteLine("-------------");
+
+
+
   }
 
 }
