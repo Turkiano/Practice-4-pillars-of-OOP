@@ -7,29 +7,20 @@ class Program
 
   static void Main(string[] args)
   {
-    Console.WriteLine("Write your name: ");
-    string? inputName = Console.ReadLine();
+    User customer1 = new (){
+
+      Name = "Turki",
+      Email = "turkiano@gmail.com",
+      Password = "3452452"
 
 
-    if (inputName is not null)
-    {
+    };
 
+        UserReadDTO customerRead = customer1.ConvertToRead();
 
-      Person person = new Person(inputName);
-
-      string? result = person.GetName();
-      Console.WriteLine("This is your name is: " + result);
-    }
-
-    else
-    {
-
-      Console.WriteLine("input can not be impty");
-
-
-    }
-
-
+        Console.WriteLine(customerRead.Name);
+        Console.WriteLine(customerRead.Email);
+        
   }
 
 }
