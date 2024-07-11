@@ -1,4 +1,6 @@
 
+using System.Security.Cryptography.X509Certificates;
+
 namespace Practice;
 
 
@@ -7,17 +9,21 @@ class Program
 
   static void Main(string[] args)
   {
-    
-    Car newCar = new();
-    Bicycle newBicycle = new();
-    Boat newBoat = new();
-
-    Vehicles newVehicle = new(); //wrong object
-
-
-
+    Program myProgram = new();
+    myProgram.DoSomething();
 
   }
+
+  public void DoSomething()
+  {
+    Student newStudent = new();
+    newStudent.FirstName = "Turkiano";
+    newStudent.Verified = true;
+    newStudent.Greeting();
+
+  }
+
+
 
 }
 
