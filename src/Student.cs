@@ -8,10 +8,10 @@ namespace Practice
     {
 
 
-//             public override void Greeting(){
-// Console.WriteLine("Hi, I am a new student, my name is " + FullName);
+            public override void Greeting(){
+Console.WriteLine("Hi, I am a new student, my name is " + FullName);
                 
-//             }
+            }
 
     }
 }
