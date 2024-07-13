@@ -7,11 +7,21 @@ class Program
 
   static void Main(string[] args)
   {
-    IMessageService emailService = new EmailService();
+    //Create an object of the dependent class
+    UserService userService = new UserService();
 
-    NotiicationService notificationService = new NotiicationService(emailService);
+    //Create an object of the subclass
+    ILogger logger = new ConsoleLogger();
 
-    notificationService.SendNotification("You recieved a package . . .");
+
+    //Inject the dependency through the property
+    userService.Logger = logger;
+
+    //invoke the dependt class
+    userService.CreateUser("Dependent");
+
+
+
   }
 
 }

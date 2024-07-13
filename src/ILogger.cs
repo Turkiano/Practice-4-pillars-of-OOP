@@ -2,11 +2,11 @@ namespace Practice
 {
 
 // Interface class 
-    public interface IMessageService 
+    public interface ILogger 
     {
 
 //method property with no body
-        void SendMessage(string message);
+void Log (string message);
     }
 
 
