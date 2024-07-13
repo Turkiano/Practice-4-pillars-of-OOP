@@ -10,8 +10,12 @@ namespace Practice
         {
             _logger = logger;
         }
+        
+
+
+
         private string[] _person = []; //property of empty array
-        public void AddPerson(string person) //adding method 
+        public void AddPerson(string person) //DI method 
         {
             _person.Append(person);
             _logger.log($"{person} is added");
