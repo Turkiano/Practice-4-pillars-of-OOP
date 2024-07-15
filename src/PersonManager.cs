@@ -4,9 +4,9 @@ namespace Practice
 
     class PersonManager
     {
-        private Logger _logger; //superClass property
+        private ILogger _logger; //superClass property
 
-        public PersonManager(Logger logger) //DI constructor 
+        public PersonManager(ILogger logger) //DI constructor 
         {
             _logger = logger;
         }
@@ -18,7 +18,7 @@ namespace Practice
         public void AddPerson(string person) //DI method 
         {
             _person.Append(person);
-            _logger.log($"{person} is added");
+            _logger.Log($"{person} is added");
         }
 
     }
