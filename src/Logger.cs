@@ -7,7 +7,8 @@ namespace Practice
 
         public void log(string message) //method property
         {
-            Console.WriteLine($"{message}");
+            // Console.WriteLine($"{message}");
+            File.WriteAllText("./logs.txt", message); //export a file 
 
         }
     }
