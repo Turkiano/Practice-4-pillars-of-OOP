@@ -18,7 +18,7 @@ class Program
     userService.Logger = logger;
 
     //invoke the dependt class
-    userService.CreateUser("Dependent");
+    userService.CreateUser("Hassan");
 
 
 
