@@ -7,7 +7,7 @@ namespace Practice
     static void Main(string[] args)
     {
 
-      
+      Client one = new();
 
 
     }
