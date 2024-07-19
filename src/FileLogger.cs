@@ -1,9 +1,8 @@
 namespace Practice
 {
 
-    class FlieLogger : ILogger
+    class FlieLogger : ILogger //subClass 01
     {
-
 
         public void Log(string message)
         {

@@ -2,7 +2,7 @@ namespace Practice
 {
 
 
-    class ConsoleLogger : ILogger //the superClass
+    class ConsoleLogger : ILogger //subClass 02
     {
         public void Log(string message)
         {

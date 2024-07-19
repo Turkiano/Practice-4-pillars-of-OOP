@@ -2,7 +2,7 @@ namespace Practice
 {
 
 
-    class PersonManager
+    class PersonManager 
     {
         private ILogger _logger; //superClass property
 

@@ -1,7 +1,7 @@
 namespace Practice{
 
 
-    interface ILogger {
+    interface ILogger { //Interface class
         void Log(string message);
 
     }
