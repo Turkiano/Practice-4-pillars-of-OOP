@@ -2,12 +2,13 @@ namespace Practice
 {
 
 
-    class Service : ISet //subClass 01
+    class Service : ISet               //subClass 
     {
-        public void print(){
+        public void print()
+        {
 
             Console.WriteLine("print ......");
-            
+
         }
     }
 }

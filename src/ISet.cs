@@ -1,7 +1,9 @@
-namespace Practice{
+namespace Practice
+{
 
 
-    interface ISet { //Interface class
+    interface ISet //Interface class
+    { 
         void print(); //method with empty body
 
     }

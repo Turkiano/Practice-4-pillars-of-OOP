@@ -7,7 +7,9 @@ namespace Practice
     static void Main(string[] args)
     {
 
-      Client one = new();
+      Client testing = new();
+      testing.run(new Service());
+
 
 
     }

@@ -3,7 +3,7 @@ using System.CodeDom.Compiler;
 namespace Practice
 {
 
-    class Client  
+    class Client
     {
         private ISet? _Iset; //superClass property
 
